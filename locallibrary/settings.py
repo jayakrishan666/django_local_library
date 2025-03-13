@@ -178,7 +178,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 # The absolute path to the directory where collectstatic will collect static files for deployment.
-STATIC_URL = '/static/'
+STATIC_URL = '/C:\Users\mejay\Downloads\django-locallibrary-tutorial-main\django-locallibrary-tutorial-main\catalog\static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 STATICFILES_DIRS = [
