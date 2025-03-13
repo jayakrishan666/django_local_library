@@ -197,19 +197,12 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Static Files Settings
 STATIC_URL = '/static/'
-
-# Directory where collectstatic will gather static files
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-# WhiteNoise storage to serve compressed static files
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# Additional locations for static files (your local static directory)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # For collectstatic
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'catalog/static'),  # Ensure this exists
 ]
+
 
 
 
